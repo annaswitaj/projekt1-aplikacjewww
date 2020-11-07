@@ -41,6 +41,10 @@ a{
     font-size: 2rem;
     text-decoration: none;
     text-align: center;
+    transition: .2s;
+}
+a:hover{
+   opacity: 50%;
 }
 /* start */
 .start{
