@@ -1,3 +1,95 @@
-body{
-background-color: orange;
+html *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #ff9100;
+color:black;
+font-family: 'Patrick Hand', cursive;
+font-size: 1.5rem;
+scroll-behavior: smooth;
+
+}
+/* header */
+h1{
+    font-size: 3rem;
+    padding: 4rem 1rem ;
+    text-align: center;
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+ul{
+   
+    padding: 1rem 15rem;
+    display: flex;
+    justify-content: space-between;
+  
+}
+ul li{
+ 
+list-style-type: none;
+text-align: center;
+cursor: pointer;;
+
+}
+a{
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+/* start */
+.start{
+    padding: 1rem;
+     display: flex;
+    flex-direction: row;
+     justify-content: center;
+}
+picture{
+    padding: 1rem;
+}
+img{
+    border-radius: 1%;
+    transition: .2s;
+}
+img:hover{
+    opacity: 80%;
+}
+/* main */
+
+section{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+p{
+    
+column-count: 2;
+column-rule:1px solid #000000;
+}
+
+@media  (max-width: 1024px) {
+    .start{
+       
+        flex-direction: column;
+       
+    }
+    picture{
+        margin:auto;
+    }
+}
+@media  (max-width: 900px) {
+   nav{
+       display: none;
+   }
 }
